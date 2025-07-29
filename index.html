@@ -237,6 +237,9 @@
   <h2 class="section-title">Certificates</h2>
 
   <div class="certificates__container bd-grid">
+  <!-- 4 main certificates here -->
+ <!-- DO NOT forget to close this before starting center container -->
+
     <!-- Certificate 1 -->
     <div class="certificate__item" onclick="openModal('modalReact')">
       <h3 class="certificate__title">React.js Internship</h3>
@@ -258,15 +261,35 @@
 
       </p>
       <p class="certificate__date">25th July 2025</p>
+
+    </div>
+    <div class="certificate__item" onclick="openModal('modalReactBootcamp')">
+      <h3 class="certificate__title">React Bootcamp</h3>
+      <p class="certificate__company">Lets Upgrade
+
+      </p>
+      <p class="certificate__date">28th June 2025</p>
     </div>
     <div class="certificate__item" onclick="openModal('modalChatGptpython')">
-      <h3 class="certificate__title">ChatGPT for Python</h3>
+      <h3 class="certificate__title">ChatGpt Python</h3>
       <p class="certificate__company">SkillUp
 
       </p>
       <p class="certificate__date">26th July 2025</p>
     </div>
-  </div>
+    <div class="certificate__item" onclick="openModal('modalHTML&CSSBootcamp')">
+      <h3 class="certificate__title">HTML & CSS Bootcamp</h3>
+      <p class="certificate__company">Lets Upgrade
+
+      </p>
+      <p class="certificate__date">5th July 2025</p>
+    </div>
+    </div> <!-- End of .certificates__container -->
+
+  <!-- Centered Certificate Container -->
+ 
+  
+</section>
 
   <!-- Modal for React -->
   <div id="modalReact" class="modal">
@@ -283,9 +306,17 @@
     <span class="close" onclick="closeModal('modalArtificialIntelligence')">&times;</span>
     <img class="modal-content" src="AI Certificate.jpeg" alt="Artificial Intelligence">
   </div>
+  <div id="modalReactBootcamp" class="modal">
+    <span class="close" onclick="closeModal('modalReactBootcamp')">&times;</span>
+    <img class="modal-content" src="LUERJSJUN1251393_page-0001.jpg" alt="React Bootcamp">
+  </div>
   <div id="modalChatGptpython" class="modal">
     <span class="close" onclick="closeModal('modalChatGptpython')">&times;</span>
     <img class="modal-content" src="Simplilearn Certificate (1)_page-0001.jpg" alt="Artificial Intelligence">
+  </div>
+  <div id="modalHTML&CSSBootcamp" class="modal">
+    <span class="close" onclick="closeModal('modalHTML&CSSBootcamp')">&times;</span>
+    <img class="modal-content" src="LUEHTMLJUL1252367_page-0001.jpg" alt="HTML & CSS Bootcamp">
   </div>
 </section>
 

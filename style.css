@@ -1612,3 +1612,34 @@ body{
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.skill {
+ 
+  color: #fff;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.skill i {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+/* Hover effect same रहे */
+.skill:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffdc2f, #dd2424);
+}
+
+/* ✅ Mobile view में भी वही color दिखे */
+@media (max-width: 768px) {
+  .skill {
+   
+    color: #fff !important;
+  }
+}

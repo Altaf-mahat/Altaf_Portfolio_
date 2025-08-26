@@ -1730,4 +1730,14 @@ body {
     box-shadow: var(--shadow);
   }
 }
+/* Mobile ke liye text ko niche lana */
+@media (max-width: 768px) {
+  .home__title {
+    margin-top: -20px;   /* yahan value adjust kar sakte ho */
+    text-align: center; /* optional: beech me dikhane ke liye */
+  }
 
+  .home__data {
+    padding-top: 40px;  /* aur thoda spacing ke liye */
+  }
+}

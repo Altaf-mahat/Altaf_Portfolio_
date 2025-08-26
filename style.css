@@ -1643,3 +1643,91 @@ body{
     color: #fff !important;
   }
 }
+:root{
+  --accent: #2563eb;
+  --card-bg: #fff;
+  --text-color: #1f2937;
+  --shadow: 0 8px 24px rgba(0,0,0,0.06);
+  --shadow-hover: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f8f9fa;
+}
+
+.skills {
+  padding: 50px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.skills__subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #334155;
+  text-align: center;
+}
+
+.skills__category {
+  margin-bottom: 40px;
+}
+
+.skills__title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--accent);
+  text-align: center;
+  font-weight: 600;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  background: var(--card-bg);
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 18px 12px;
+  border-radius: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill i {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.skill:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Mobile View - 2 cards side by side, same color/shadow as desktop */
+@media (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill {
+    background: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: var(--shadow);
+  }
+}
+
